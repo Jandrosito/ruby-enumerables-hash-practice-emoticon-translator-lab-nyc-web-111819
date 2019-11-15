@@ -6,9 +6,9 @@
       get_meaning: {},
       get_emoticon: {}
     }
-  emoticons.each do |menaing, eglish_japanaise_emoji|
-final_hash[:get_emoticon][english_japanase_emoji[0]] = eglish_japanaise_emoji[1]
-final_hash[:get_meaning][english_japanaise_emoji[1]] = menaing
+  emoticons.each do |meaning, english_japanese_emoji|
+final_hash[:get_emoticon][english_japanese_emoji[0]] = english_japanese_emoji[1]
+final_hash[:get_meaning][english_japanese_emoji[1]] = meaning
   end
  final_hash
 end
