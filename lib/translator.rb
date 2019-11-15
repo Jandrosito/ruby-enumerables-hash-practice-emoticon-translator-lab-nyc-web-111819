@@ -9,7 +9,7 @@ def load_library(fp)
 
   emoticons.map {|ele, ele2|
     new_hash[:get_meaning][ele2[1]] = ele
-    new_hash[:get_emoticon][ele2[0]] = subele[1]
+    new_hash[:get_emoticon][ele2[0]] = ele2[1]
   }
   new_hash
 end
