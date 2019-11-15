@@ -7,7 +7,7 @@ def load_library(asdf)
   new_hash[:get_meaning] = {}
   new_hash[:get_emoticon] = {}
 
-  emoticons.map {|ele, subele|
+  emoticons.map {|ele, ele2|
     new_hash[:get_meaning][subele[1]] = ele
     new_hash[:get_emoticon][subele[0]] = subele[1]
   }
