@@ -27,5 +27,12 @@ def get_japanese_emoticon
 end
 
 def get_english_meaning
-  # code goes here
+  library=load_library(emoticons)
+  emoticons = YAML.load_file('./lib/emoticons.yml')
+    library[:get_meaning].each do |k,v|
+      if k == target
+        return v
+      end
+    end
+    return  "Sorry, that emoticon was not found"
 end
