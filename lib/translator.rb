@@ -13,7 +13,7 @@ final_hash[:get_meaning][eglish_japanaise_emoji[1]] = menaing
  final_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(emoticons, target)
   new_hash=load_library(emoticons)
   emoticons = YAML.load_file('./lib/emoticons.yml')
   new_hash[:get_emoticon].each do |english, japain|
