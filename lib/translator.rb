@@ -1,15 +1,15 @@
 # require modules here
 require 'yaml'
 
-def load_library(asdf)
-  emoticons = YAML.load_file(asdf)
+def load_library(fp)
+  emoticons = YAML.load_file(fp)
   new_hash = {}
   new_hash[:get_meaning] = {}
   new_hash[:get_emoticon] = {}
 
   emoticons.map {|ele, ele2|
-    new_hash[:get_meaning][subele[1]] = ele
-    new_hash[:get_emoticon][subele[0]] = subele[1]
+    new_hash[:get_meaning][ele2[1]] = ele
+    new_hash[:get_emoticon][ele2[0]] = subele[1]
   }
   new_hash
 end
