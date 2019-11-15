@@ -34,4 +34,3 @@ def get_english_meaning(emoticons, target0)
     end
     return  "Sorry, that emoticon was not found"
 end
-end
